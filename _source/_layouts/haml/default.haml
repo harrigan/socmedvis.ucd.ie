@@ -2,12 +2,26 @@
 %html
   %head
     %meta{ "http-equiv" => "content-type", :content => "text/html; charset=utf-8" }
+    %meta{ "http-equiv" => "Cache-Control", :content => "no-cache" }
+    %meta{ "http-equiv" => "Pragma", :content => "no-cache" }
+    %meta{ "http-equiv" => "Expires", :content => "0" }
     %title
       Workshop on Social Media Visualization (SocMedVis)
     %meta{ :name => "description", :content => "Workshop on Social Media Visualization (SocMedVis)" }
     %link{ :rel => "stylesheet", :type => "text/css", :href => "/css/bootstrap.css" }
     %link{ :rel => "stylesheet", :type => "text/css", :href => "/css/style.css" }
   %body
+    .jumbotron.masthead
+      .inner
+        .container
+          %h1
+            Workshop on Social Media Visualization (SocMedVis)
+          %p.lead
+            in conjunction with
+            %a{ :href => "http://www.icwsm.org" } the International AAAI Conference on Weblogs and Social Media
+            &nbsp;
+            %a{ :href => "http://www.icwsm.org" }
+              %img{ :src => "media/icwsm_logo.png", :width => "121px", :height => "25px" }
     .topbar
       .fill
         .container
@@ -21,19 +35,11 @@
             %li
               %a{ :href => "/submissions.html" } Submissions
             %li
-              %a{ :href => "/organizers.html" } Organizers
+              %a{ :href => "/organizers_and_program_committee.html" } Organizers
             %li
               %a{ :href => "/activities.html" } Activities
             %li
               %a{ :href => "/schedule.html" } Schedule
-    .jumbotron.masthead
-      .inner
-        .container
-          %h1
-            Workshop on Social Media Visualization (SocMedVis)
-          %p.lead
-            in conjunction with
-            %a{ :href => "http://www.icwsm.org/" } the International AAAI Conference on Weblogs and Social Media (ICWSM'12)
     .container
       .content
         .page-header
