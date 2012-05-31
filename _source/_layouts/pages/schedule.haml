@@ -177,4 +177,10 @@ title: Schedule
         19:00
       %td{ :width => "85%" }
         %b
-          Social event at local pub
+          Social event at
+          = succeed "." do
+            %a{ :href => "http://www.yelp.ie/biz/lincolns-inn-dublin" } Lincoln's Inn
+          See
+          %a{ :href => "media/social_event_venue.jpg" }
+            map
+          for directions from the workshop venue.
