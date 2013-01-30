@@ -11,75 +11,86 @@
     <meta content='Workshop on Social Media Visualization (SocMedVis)' name='description' />
     <link href='/css/bootstrap.css' rel='stylesheet' type='text/css' />
     <link href='/css/style.css' rel='stylesheet' type='text/css' />
+    <link href='/css/banner.css' rel='stylesheet' type='text/css' />
   </head>
   <body>
-    <div class='jumbotron masthead'>
-      <div class='inner'>
-        <div class='container'>
-          <h1>
-            Workshop on Social Media Visualization (SocMedVis)
-          </h1>
-          <p class='lead'>
-            in conjunction with
-            <a href='http://www.icwsm.org'>the International AAAI Conference on Weblogs and Social Media</a>
-            &nbsp;
-            <a href='http://www.icwsm.org'>
-              <img height='25px' src='media/icwsm_logo.png' width='121px' />
-            </a>
-          </p>
-        </div>
+    <div id='banner'>
+      <div id='banner-content'>
+        <b style='font-weight:bold; color: #ff3333;'>
+          This website is for the 2012 edition of the workshop. For the 2013 edition, please visit
+          <a href='http://socmedvis.swansea.ac.uk'>http://socmedvis.swansea.ac.uk</a>.
+        </b>
       </div>
     </div>
-    <div class='topbar'>
-      <div class='fill'>
-        <div class='container'>
-          <ul class='nav'>
-            <li class='active'>
-              <a href='/index.html'>Overview</a>
-            </li>
-            <li>
-              <a href='/call_for_papers.html'>Call for Papers</a>
-            </li>
-            <li>
-              <a href='/important_dates.html'>Important Dates</a>
-            </li>
-            <li>
-              <a href='/submissions.html'>Submissions</a>
-            </li>
-            <li>
-              <a href='/organizers_and_program_committee.html'>Organizers</a>
-            </li>
-            <li>
-              <a href='/activities.html'>Activities</a>
-            </li>
-            <li>
-              <a href='/schedule.html'>Schedule</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class='container'>
-      <div class='content'>
-        <div class='page-header'>
-          <h1>
-            {{ page.title }}
-          </h1>
-        </div>
-        <div class='row'>
-          <div class='span14'>
-            {{ content }}
+    <div id='main-content'>
+      <div class='jumbotron masthead'>
+        <div class='inner'>
+          <div class='container'>
+            <h1>
+              Workshop on Social Media Visualization (SocMedVis)
+            </h1>
+            <p class='lead'>
+              in conjunction with
+              <a href='http://www.icwsm.org'>the International AAAI Conference on Weblogs and Social Media</a>
+              &nbsp;
+              <a href='http://www.icwsm.org'>
+                <img height='25px' src='media/icwsm_logo.png' width='121px' />
+              </a>
+            </p>
           </div>
         </div>
       </div>
-      <footer>
-        <p>
-          Created with
-          <a href='https://github.com/mojombo/jekyll'>Jekyll</a>
-          and
-          <a href='https://github.com/connatser/hyde'>Hyde</a>.
-        </p>
-      </footer>
+      <div class='topbar'>
+        <div class='fill'>
+          <div class='container'>
+            <ul class='nav'>
+              <li class='active'>
+                <a href='/index.html'>Overview</a>
+              </li>
+              <li>
+                <a href='/call_for_papers.html'>Call for Papers</a>
+              </li>
+              <li>
+                <a href='/important_dates.html'>Important Dates</a>
+              </li>
+              <li>
+                <a href='/submissions.html'>Submissions</a>
+              </li>
+              <li>
+                <a href='/organizers_and_program_committee.html'>Organizers</a>
+              </li>
+              <li>
+                <a href='/activities.html'>Activities</a>
+              </li>
+              <li>
+                <a href='/schedule.html'>Schedule</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class='container'>
+        <div class='content'>
+          <div class='page-header'>
+            <h1>
+              {{ page.title }}
+            </h1>
+          </div>
+          <div class='row'>
+            <div class='span14'>
+              {{ content }}
+            </div>
+          </div>
+        </div>
+        <footer>
+          <p>
+            Created with
+            <a href='https://github.com/mojombo/jekyll'>Jekyll</a>
+            and
+            <a href='https://github.com/connatser/hyde'>Hyde</a>.
+          </p>
+        </footer>
+      </div>
     </div>
     <script type='text/javascript'>
       //<![CDATA[

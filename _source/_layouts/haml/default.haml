@@ -10,51 +10,59 @@
     %meta{ :name => "description", :content => "Workshop on Social Media Visualization (SocMedVis)" }
     %link{ :rel => "stylesheet", :type => "text/css", :href => "/css/bootstrap.css" }
     %link{ :rel => "stylesheet", :type => "text/css", :href => "/css/style.css" }
+    %link{ :rel => "stylesheet", :type => "text/css", :href => "/css/banner.css" }
   %body
-    .jumbotron.masthead
-      .inner
-        .container
-          %h1
-            Workshop on Social Media Visualization (SocMedVis)
-          %p.lead
-            in conjunction with
-            %a{ :href => "http://www.icwsm.org" } the International AAAI Conference on Weblogs and Social Media
-            &nbsp;
-            %a{ :href => "http://www.icwsm.org" }
-              %img{ :src => "media/icwsm_logo.png", :width => "121px", :height => "25px" }
-    .topbar
-      .fill
-        .container
-          %ul.nav
-            %li.active
-              %a{ :href => "/index.html" } Overview
-            %li
-              %a{ :href => "/call_for_papers.html" } Call for Papers
-            %li
-              %a{ :href => "/important_dates.html" } Important Dates
-            %li
-              %a{ :href => "/submissions.html" } Submissions
-            %li
-              %a{ :href => "/organizers_and_program_committee.html" } Organizers
-            %li
-              %a{ :href => "/activities.html" } Activities
-            %li
-              %a{ :href => "/schedule.html" } Schedule
-    .container
-      .content
-        .page-header
-          %h1
-            {{ page.title }}
-        .row
-          .span14
-            {{ content }}
-      %footer
-        %p
-          Created with
-          %a{ :href => "https://github.com/mojombo/jekyll" } Jekyll
-          and
+    #banner
+      #banner-content
+        %b{ :style => "font-weight:bold; color: #ff3333;" }
+          This website is for the 2012 edition of the workshop. For the 2013 edition, please visit
           = succeed "." do
-            %a{ :href => "https://github.com/connatser/hyde" } Hyde
+            %a{ :href => "http://socmedvis.swansea.ac.uk" } http://socmedvis.swansea.ac.uk
+    #main-content
+      .jumbotron.masthead
+        .inner
+          .container
+            %h1
+              Workshop on Social Media Visualization (SocMedVis)
+            %p.lead
+              in conjunction with
+              %a{ :href => "http://www.icwsm.org" } the International AAAI Conference on Weblogs and Social Media
+              &nbsp;
+              %a{ :href => "http://www.icwsm.org" }
+                %img{ :src => "media/icwsm_logo.png", :width => "121px", :height => "25px" }
+      .topbar
+        .fill
+          .container
+            %ul.nav
+              %li.active
+                %a{ :href => "/index.html" } Overview
+              %li
+                %a{ :href => "/call_for_papers.html" } Call for Papers
+              %li
+                %a{ :href => "/important_dates.html" } Important Dates
+              %li
+                %a{ :href => "/submissions.html" } Submissions
+              %li
+                %a{ :href => "/organizers_and_program_committee.html" } Organizers
+              %li
+                %a{ :href => "/activities.html" } Activities
+              %li
+                %a{ :href => "/schedule.html" } Schedule
+      .container
+        .content
+          .page-header
+            %h1
+              {{ page.title }}
+          .row
+            .span14
+              {{ content }}
+        %footer
+          %p
+            Created with
+            %a{ :href => "https://github.com/mojombo/jekyll" } Jekyll
+            and
+            = succeed "." do
+              %a{ :href => "https://github.com/connatser/hyde" } Hyde
     :javascript
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-496232-10']);
